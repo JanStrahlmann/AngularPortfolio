@@ -1,1 +1,44 @@
-<p>contact works!</p>
+<div class="container">
+    <div class="d-flex justify-content-center">
+        <div class="text-center border mb-5 shadow rounded-5 p-3" style="max-width: 750px;">
+            <h1>Kontakt</h1>
+            <p>
+                Sie können mich unter folgender E-Mail erreichen:
+                <span 
+                  title="Zum Kopieren klicken"
+                  style="cursor: pointer; color: #007bff; text-decoration: underline;"
+                  (click)="copyToClipboard('Jan.Strahlmann@Airbus.com')"
+                >
+                  Jan.Strahlmann&#64;Airbus.com
+                </span>
+              </p>
+              
+              <!-- ✅ Popup -->
+              <div 
+                *ngIf="showCopiedPopup" 
+                class="position-fixed top-0 start-50 translate-middle-x bg-dark text-white px-3 py-2 rounded shadow"
+                style="z-index: 9999; margin-top: 1rem;"
+              >
+                E-Mail wurde in die Zwischenablage kopiert.
+              </div>
+              
+                          
+            <p>Falls Sie Fragen oder Anregungen haben, können Sie mir dort gerne schreiben oder <br> schauen 
+                Sie gerne auf Github vorbei, dort habe ich noch andere kleine Projekte</p>
+        </div>
+    </div>
+
+    <div class="d-flex gap-3 justify-content-center" style="width: 100%;">
+        <a title="Klicken um das Profil auf Github zu Besuchen" href="//www.Github.com" target="_blank" class="rounded-5 list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 shadow justify-content-center" style="width: 200px;">
+          <img src="GitHub.png" style="width: 32px; height: 32px;" class="rounded-circle flex-shrink-0"> 
+          <h3 class="mb-0">GitHub</h3>
+        </a>
+      
+        <a title="Klicken um das Profil auf LinkedIn zu Besuchen" href="//www.Linkedin.com" target="_blank" class=" rounded-5 list-group-item list-group-item-action d-flex align-items-center gap-3 py-3 shadow justify-content-center" style="width: 200px;">
+          <img src="LinkedIn.png" style="width: 32px; height: 32px;" class="rounded-circle flex-shrink-0"> 
+          <h3 class="mb-0">LinkedIn</h3>
+        </a>
+      </div>
+      
+      
+</div>
