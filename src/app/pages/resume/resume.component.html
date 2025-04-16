@@ -1,1 +1,95 @@
-<p>resume works!</p>
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Berufserfahrung</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen"  style="color: white;">v</div>
+                    </div>
+
+                </button>
+              <h2 class="mb-0">Fluggerätmechaniker</h2>
+              <h3 class="text-primary">Autoklavbediener</h3>
+              <ul class="justify-content-center d-flex">
+                <li style="width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae incidunt neque illum odio vitae,</li>
+              </ul>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isTraineeOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Ausbildung</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isTraineeOpen" style="color: white;">></div>
+                        <div *ngIf="isTraineeOpen"  style="color: white;">v</div>
+                    </div>
+
+                </button>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                      <h3>Realschule:</h3>
+                      <ul>
+                        <li>erweiterter Realschulabschluss</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h3>Ausbildung bei Airbus:</h3>
+                      <ul>
+                        <li>Als Fluggerät mechaniker</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h3>Developer Akademie:</h3>
+                      <ul>
+                        <li>Weiterbildung zum Front End Developer</li>
+                      </ul>
+                    </div>
+                  </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen"  style="color: white;">v</div>
+                    </div>
+
+                </button>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                      <h3>Programmiersprachen:</h3>
+                      <ul>
+                        <li>TypeScript</li>
+                        <li>Javascript</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h3>Frameworks:</h3>
+                      <ul>
+                        <li>Angular</li>
+                      </ul>
+                    </div>
+                    <div class="col">
+                      <h3>Other Skills:</h3>
+                      <ul>
+                        <li>Source Control via Git</li>
+                        <li>„Remote-Teamarbeit über GitHub (Pull Requests, Code Reviews, Feature Branches)“</li>
+                        <li>Arbeiten mit RESTful APIs</li>
+                        <li>Nutzung von Local Storage zur Datenspeicherung im Browser</li>
+                        <li>Design-to-Code-Erfahrung mit Figma-Vorlagen</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+            </accordion-group>
+          </accordion>
+    </div>
+</div>
