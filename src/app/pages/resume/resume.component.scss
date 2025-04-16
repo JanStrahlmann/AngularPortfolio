@@ -3,5 +3,11 @@ accordion-group::ng-deep .btn-link {
 }
 
 accordion-group::ng-deep .card-header {
-    background-color: #007bff;
+    background-color: #6c757d;
 }
+
+@media (max-width: 380px) {
+    .changeWidthOnMobile {
+        width: 280px !important;
+    }
+  }
