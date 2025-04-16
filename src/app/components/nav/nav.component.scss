@@ -1,0 +1,17 @@
+@media (max-width: 400px) {
+    .changeFontSizeOnMobile {
+        font-size: 1.1rem !important;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .changeFontSizeOnMobile {
+        font-size: 1rem !important;
+    }
+  }
+
+  @media (max-width: 355px) {
+    .changeFontSizeOnMobile {
+        font-size: 0.9rem !important;
+    }
+  }
