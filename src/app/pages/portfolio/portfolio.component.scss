@@ -1,0 +1,17 @@
+.changeWidthOnMobile {
+    min-width: 400px;
+  
+    @media (max-width: 450px) {
+      max-width: 300px !important;
+      min-width: 300px !important;
+    }
+  }
+  
+  .container {
+        max-width: 1140px;
+
+        @media (max-width: 450px) {
+            display: flex;
+            justify-content: center;
+        }
+  }
