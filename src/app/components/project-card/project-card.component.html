@@ -1,8 +1,8 @@
-<div class="card shadow text-center" style="max-width: 400px; min-width: 400px;">
+<div class="card shadow text-center rounded-5" style="max-width: 400px; min-width: 400px;">
     <div class="card-body">
         <h5 class="card-title">{{project.name}}</h5>
         <p class="card-text">{{project.summary}}</p>
-        <button class="btn btn-primary" (click)="OpenProjectModal()">Mehr Anzeigen</button>
+        <button title="Klicken für mehr Details" class="btn btn-secondary rounded-5" (click)="OpenProjectModal()">Mehr Anzeigen</button>
     </div>
     <div class="card-footer">
         <div class="d-flex flex-wrap justify-content-center">
