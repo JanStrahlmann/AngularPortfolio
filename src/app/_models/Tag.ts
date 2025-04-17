@@ -7,6 +7,7 @@ export class Tag {
   static readonly TYPESCRIPT = new Tag('Typescript', 'purple');
   static readonly API = new Tag('Api', 'lightgreen');
   static readonly SCSS = new Tag('SCSS', 'lightblue');
+  static readonly LOCALSTORAGE = new Tag('Local Storage', 'teal');
 
   private constructor(
     private readonly key: string,
