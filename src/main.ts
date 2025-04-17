@@ -10,10 +10,6 @@ bootstrapApplication(AppComponent, {
   providers: [
     provideRouter(routes),
     provideAnimations(),
-    importProvidersFrom(ModalModule.forRoot()) // ⬅️ das ist entscheidend!
-  ]
-}).catch(err => console.error(err));
-
-
-
-
+    importProvidersFrom(ModalModule.forRoot()),
+  ],
+}).catch((err) => console.error(err));

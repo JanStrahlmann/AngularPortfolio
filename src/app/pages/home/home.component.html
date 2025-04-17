@@ -1,17 +1,17 @@
 <div class="container">
     <div class="row">
-        <!--About me-->
         <div class="col-lg shadow border m-1">
             <div class="text-center">
                 <h2>Über mich</h2>
-                <img src="769e3136185893.57128879735aa.gif" alt="profilpicture" width="256" height="256" class="rounded-circle">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorem veritatis, animi harum repellendus dolor! At veritatis modi, 
+                <img src="769e3136185893.57128879735aa.gif" alt="profilpicture" width="256" height="256"
+                    class="rounded-circle">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorem veritatis, animi harum
+                    repellendus dolor! At veritatis modi,
                     impedit, mollitia nam dolor maiores labore adipisci praesentium sint expedita dolore suscipit.
                 </p>
             </div>
         </div>
 
-        <!--Project-->
         <div class="col-lg shadow border m-1">
             <div class="text-center">
                 <h2>Vorgestelltes Projekt</h2>
@@ -19,13 +19,13 @@
             </div>
 
             <carousel>
-              <div *ngFor="let picture of featuredProject.pictures">
-                  <slide><img src={{picture}} style="display: block; width: 100%;"></slide>
-              </div>
-          </carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide><img src={{picture}} style="display: block; width: 100%;"></slide>
+                </div>
+            </carousel>
 
-          <p class="mt-2">{{featuredProject.summary}}</p>
-          <p>Besuchen Sie die Portfolio Sektion, um mehr zu Erfahren</p>
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p>Besuchen Sie die Portfolio Sektion, um mehr zu Erfahren</p>
         </div>
     </div>
 </div>

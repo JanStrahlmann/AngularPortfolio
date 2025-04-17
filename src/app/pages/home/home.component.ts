@@ -11,17 +11,16 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
   standalone: true,
   imports: [CommonModule, ModalModule, CarouselModule],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'] 
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-
   featuredProject = {} as Project;
   modalRef?: BsModalRef;
 
   constructor(
     private titleService: Title,
     private projectService: ProjectsService,
-    private modalService: BsModalService 
+    private modalService: BsModalService
   ) {
     this.titleService.setTitle('Jan Strahlmann - Home');
   }

@@ -7,30 +7,31 @@ import { ProjectModalComponent } from '../project-modal/project-modal.component'
 
 
 
+
 @Component({
   selector: 'app-project-card',
   imports: [CommonModule, ModalModule],
   templateUrl: './project-card.component.html',
-  styleUrl: './project-card.component.scss'
+  styleUrl: './project-card.component.scss',
 })
+
 export class ProjectCardComponent {
-@Input() project = {} as Project;
+  @Input() project = {} as Project;
   bsModalRef?: BsModalRef;
 
-  constructor(private modalService: BsModalService) {
-    
-  }
+  constructor(private modalService: BsModalService) {}
 
   OpenProjectModal() {
     const modalOptions: ModalOptions = {
-      class: "modal-lg",
+      class: 'modal-lg',
       initialState: {
-        project: this.project
-      }
-    }
+        project: this.project,
+      },
+    };
 
-
-    this.bsModalRef = this.modalService.show(ProjectModalComponent, modalOptions);
+    this.bsModalRef = this.modalService.show(
+      ProjectModalComponent,
+      modalOptions
+    );
   }
-
 }

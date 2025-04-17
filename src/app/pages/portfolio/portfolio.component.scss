@@ -1,22 +1,22 @@
 .changeWidthOnMobile {
-    min-width: 400px;
-  
-    @media (max-width: 415px) {
-      max-width: 350px !important;
-      min-width: 350px !important;
-    }
+  min-width: 400px;
 
-    @media (max-width: 380px) {
-        max-width: 300px !important;
-        min-width: 300px !important;
-      }
+  @media (max-width: 415px) {
+    max-width: 350px !important;
+    min-width: 350px !important;
   }
-  
-  .container {
-        max-width: 1140px;
 
-        @media (max-width: 415px) {
-            display: flex;
-            justify-content: center;
-        }
+  @media (max-width: 380px) {
+    max-width: 300px !important;
+    min-width: 300px !important;
   }
+}
+
+.container {
+  max-width: 1140px;
+
+  @media (max-width: 415px) {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,112 +1,131 @@
 <div class="container text-center justify-content-center d-flex col align-items-center flex-column">
-    <button (click)="DownloadFile()" title="Klicken für den Download" class="rounded-5 btn btn-secondary mb-4 shadow border d-flex align-items-center gap-2 py-3">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-down d-flex " viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z"/>
-        <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
-      </svg>Download Lebenslauf als PDF
-    </button>
+  <button (click)="DownloadFile()" title="Klicken für den Download"
+    class="rounded-5 btn btn-secondary mb-4 shadow border d-flex align-items-center gap-2 py-3">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+      class="bi bi-box-arrow-in-down d-flex " viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z" />
+      <path fill-rule="evenodd"
+        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+    </svg>Download Lebenslauf als PDF
+  </button>
 
-    <div class="pb-2 rounded-5 changeWidthOnMobile" style="width: 350px;">
-        <accordion [isAnimated]="true" class="shadow">
-            <accordion-group [(isOpen)]="isWorkExperienceOpen">
-                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
-                    <div style="visibility: hidden;">></div>
-                    <div class="btn-link">Berufserfahrung</div>
 
-                    <div style="width: 10.95px;">
-                        <div *ngIf="!isWorkExperienceOpen" style="color: white;" title="Zum Öffnen klicken"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-                        </svg></div>
-                        <div *ngIf="isWorkExperienceOpen"  style="color: white;" title="Zum Schließen klicken"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
-                        </svg></div>
-                    </div>
+  <div class="pb-2 rounded-5 changeWidthOnMobile" style="width: 350px;">
+    <accordion [isAnimated]="true" class="shadow rounded-5">
+      <accordion-group [(isOpen)]="isWorkExperienceOpen">
+        <div class="w-100 d-flex justify-content-between align-items-center bg-secondary text-white px-3 py-2 rounded"
+          accordion-heading style="cursor: pointer; user-select: none;">
+          <div style="width: 10px; visibility: hidden;">></div>
+          <div class="fw-semibold">Berufserfahrung</div>
+          <div style="width: 10.95px;"
+            [attr.title]="isWorkExperienceOpen ? 'Zum Schließen klicken' : 'Zum Öffnen klicken'">
+            <svg *ngIf="!isWorkExperienceOpen" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+            <svg *ngIf="isWorkExperienceOpen" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+            </svg>
+          </div>
+        </div>
+        <h2 class="mb-0">Fluggerätmechaniker</h2>
+        <h3 class="text-primary">Autoklavbediener</h3>
+        <ul class="justify-content-center d-flex">
+          <li style="width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae incidunt neque
+            illum odio vitae,</li>
+        </ul>
+      </accordion-group>
 
-                </button>
-              <h2 class="mb-0">Fluggerätmechaniker</h2>
-              <h3 class="text-primary">Autoklavbediener</h3>
-              <ul class="justify-content-center d-flex">
-                <li style="width: 300px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae incidunt neque illum odio vitae,</li>
-              </ul>
-            </accordion-group>
-            <accordion-group [(isOpen)]="isTraineeOpen">
-                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
-                    <div style="visibility: hidden;">></div>
-                    <div class="btn-link">Ausbildung</div>
 
-                    <div style="width: 10.95px;">
-                        <div *ngIf="!isTraineeOpen" style="color: white;" title="Zum Öffnen klicken"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-                        </svg></div>
-                        <div *ngIf="isTraineeOpen"  style="color: white;" title="Zum Schließen klicken"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
-                        </svg></div>
-                    </div>
+      <accordion-group [(isOpen)]="isTraineeOpen">
+        <div class="w-100 d-flex justify-content-between align-items-center bg-secondary text-white px-3 py-2 rounded"
+          accordion-heading style="cursor: pointer; user-select: none;">
+          <div style="width: 10px; visibility: hidden;">></div>
+          <div class="fw-semibold">Ausbildung</div>
+          <div style="width: 10.95px;" [attr.title]="isTraineeOpen ? 'Zum Schließen klicken' : 'Zum Öffnen klicken'">
+            <svg *ngIf="!isTraineeOpen" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+            <svg *ngIf="isTraineeOpen" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+            </svg>
+          </div>
+        </div>
+        <div class="row d-flex flex-column" style="text-align: left;">
+          <div class="col">
+            <h3>Realschule:</h3>
+            <ul>
+              <li>erweiterter Realschulabschluss</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Ausbildung bei Airbus:</h3>
+            <ul>
+              <li>Als Fluggerät mechaniker</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Developer Akademie:</h3>
+            <ul>
+              <li>Weiterbildung zum Front End Developer</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
 
-                </button>
-                <div class="row d-flex flex-column" style="text-align: left;">
-                    <div class="col">
-                      <h3>Realschule:</h3>
-                      <ul>
-                        <li>erweiterter Realschulabschluss</li>
-                      </ul>
-                    </div>
-                    <div class="col">
-                      <h3>Ausbildung bei Airbus:</h3>
-                      <ul>
-                        <li>Als Fluggerät mechaniker</li>
-                      </ul>
-                    </div>
-                    <div class="col">
-                      <h3>Developer Akademie:</h3>
-                      <ul>
-                        <li>Weiterbildung zum Front End Developer</li>
-                      </ul>
-                    </div>
-                  </div>
-            </accordion-group>
-            <accordion-group [(isOpen)]="isSkillsOpen">
-                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
-                    <div style="visibility: hidden;">></div>
-                    <div class="btn-link">Skills</div>
 
-                    <div style="width: 10.95px;">
-                        <div *ngIf="!isSkillsOpen" style="color: white;" title="Zum Öffnen klicken"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-                        </svg></div>
-                        <div *ngIf="isSkillsOpen"  style="color: white;" title="Zum Schließen klicken"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
-                        </svg></div>
-                    </div>
-
-                </button>
-                <div class="row" style="text-align: left;">
-                    <div class="col">
-                      <h3>Programmiersprachen:</h3>
-                      <ul>
-                        <li>TypeScript</li>
-                        <li>Javascript</li>
-                      </ul>
-                    </div>
-                    <div class="col">
-                      <h3>Frameworks:</h3>
-                      <ul>
-                        <li>Angular</li>
-                      </ul>
-                    </div>
-                    <div class="col">
-                      <h3>Other Skills:</h3>
-                      <ul>
-                        <li>Source Control via Git</li>
-                        <li>„Remote-Teamarbeit über GitHub (Pull Requests, Code Reviews, Feature Branches)“</li>
-                        <li>Arbeiten mit RESTful APIs</li>
-                        <li>Nutzung von Local Storage zur Datenspeicherung im Browser</li>
-                        <li>Design-to-Code-Erfahrung mit Figma-Vorlagen</li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-            </accordion-group>
-          </accordion>
-    </div>
+      <accordion-group [(isOpen)]="isSkillsOpen">
+        <div class="w-100 d-flex justify-content-between align-items-center bg-secondary text-white px-3 py-2 rounded"
+          accordion-heading style="cursor: pointer; user-select: none;">
+          <div style="width: 10px; visibility: hidden;">></div>
+          <div class="fw-semibold">Skills</div>
+          <div style="width: 10.95px;" [attr.title]="isSkillsOpen ? 'Zum Schließen klicken' : 'Zum Öffnen klicken'">
+            <svg *ngIf="!isSkillsOpen" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+            <svg *ngIf="isSkillsOpen" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+            </svg>
+          </div>
+        </div>
+        <div class="row" style="text-align: left;">
+          <div class="col">
+            <h3>Programmiersprachen:</h3>
+            <ul>
+              <li>TypeScript</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Frameworks:</h3>
+            <ul>
+              <li>Angular</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Other Skills:</h3>
+            <ul>
+              <li>Source Control via Git</li>
+              <li>„Remote-Teamarbeit über GitHub (Pull Requests, Code Reviews, Feature Branches)“</li>
+              <li>Arbeiten mit RESTful APIs</li>
+              <li>Nutzung von Local Storage zur Datenspeicherung im Browser</li>
+              <li>Design-to-Code-Erfahrung mit Figma-Vorlagen</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+  </div>
 </div>

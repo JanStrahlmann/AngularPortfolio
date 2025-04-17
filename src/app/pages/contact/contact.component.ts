@@ -6,26 +6,27 @@ import { Title } from '@angular/platform-browser';
   selector: 'app-contact',
   imports: [CommonModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-
   constructor(private titleService: Title) {
-    this.titleService.setTitle('Jan Strahlmann - Kontakt')
+    this.titleService.setTitle('Jan Strahlmann - Kontakt');
   }
 
   showCopiedPopup = false;
 
   copyToClipboard(text: string): void {
-    navigator.clipboard.writeText(text).then(() => {
-      this.showCopiedPopup = true;
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        this.showCopiedPopup = true;
 
-      // Blende das Popup nach 2 Sekunden wieder aus
-      setTimeout(() => {
-        this.showCopiedPopup = false;
-      }, 2000);
-    }).catch(err => {
-      console.error('Fehler beim Kopieren:', err);
-    });
+        setTimeout(() => {
+          this.showCopiedPopup = false;
+        }, 2000);
+      })
+      .catch((err) => {
+        console.error('Fehler beim Kopieren:', err);
+      });
   }
 }

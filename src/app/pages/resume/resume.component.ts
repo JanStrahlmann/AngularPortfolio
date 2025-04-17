@@ -5,23 +5,17 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-resume',
-  imports: [
-    CommonModule,
-    AccordionComponent,
-    AccordionPanelComponent
-  ],
+  imports: [CommonModule, AccordionComponent, AccordionPanelComponent],
   templateUrl: './resume.component.html',
-  styleUrl: './resume.component.scss'
+  styleUrl: './resume.component.scss',
 })
 export class ResumeComponent {
-
-
   isWorkExperienceOpen: boolean = false;
   isTraineeOpen: boolean = false;
   isSkillsOpen: boolean = false;
 
   constructor(private titleService: Title, private renderer: Renderer2) {
-    this.titleService.setTitle('Jan Strahlmann - Resume')
+    this.titleService.setTitle('Jan Strahlmann - Resume');
   }
 
   DownloadFile() {

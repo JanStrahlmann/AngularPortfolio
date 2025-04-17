@@ -8,13 +8,10 @@ import { CommonModule } from '@angular/common';
   selector: 'app-project-modal',
   imports: [CarouselModule, CommonModule],
   templateUrl: './project-modal.component.html',
-  styleUrl: './project-modal.component.scss'
+  styleUrl: './project-modal.component.scss',
 })
 export class ProjectModalComponent {
   project = {} as Project;
 
-  constructor(public bsModalRef: BsModalRef) {
-
-  }
-
+  constructor(public bsModalRef: BsModalRef) {}
 }
