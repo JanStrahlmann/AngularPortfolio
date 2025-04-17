@@ -10,8 +10,9 @@ export class ProjectsService {
     {
       id: 0,
       name: 'Pokedex',
-      summary: 'Das ist ein Besipeil',
-      description: '',
+      summary: 'Das ist ein Beispiel 1',
+      description:
+        'Das ist alles was ich schreiben kann denn ich finde es sehr serh sehr toll hihihi',
       projectLinkGithub: '//www.github.com',
       projectLinkViewSite: '//www.google.com',
       tags: [Tag.HTML, Tag.CSS, Tag.JAVASCRIPT, Tag.API],
@@ -20,8 +21,9 @@ export class ProjectsService {
     {
       id: 1,
       name: 'Join',
-      summary: 'Das ist ein Besipeil',
-      description: '',
+      summary: 'Das ist ein Beispiel 2',
+      description:
+        'Das ist alles was ich schreiben kann denn ich finde es sehr serh sehr toll hihihi',
       projectLinkGithub: '//www.github.com',
       projectLinkViewSite: '//www.google.com',
       tags: [Tag.HTML, Tag.CSS, Tag.JAVASCRIPT],
@@ -30,8 +32,9 @@ export class ProjectsService {
     {
       id: 2,
       name: 'Angular Portfolio',
-      summary: 'Das ist ein Besipeil',
-      description: '',
+      summary: 'Das ist ein Beispiel 3',
+      description:
+        'Das ist alles was ich schreiben kann denn ich finde es sehr serh sehr toll hihihi',
       projectLinkGithub:
         'https://github.com/JanStrahlmann/AngularPortfolio.git',
       projectLinkViewSite: '//www.google.com',
@@ -41,8 +44,9 @@ export class ProjectsService {
     {
       id: 3,
       name: 'Wetter App',
-      summary: 'Das ist ein Besipeil',
-      description: '',
+      summary: 'Das ist ein Beispiel 4',
+      description:
+        'Das ist alles was ich schreiben kann denn ich finde es sehr serh sehr toll hihihi',
       projectLinkGithub: '//www.github.com',
       projectLinkViewSite: '//www.google.com',
       tags: [Tag.HTML, Tag.CSS, Tag.JAVASCRIPT, Tag.API],
