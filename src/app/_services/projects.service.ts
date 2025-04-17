@@ -13,7 +13,7 @@ export class ProjectsService {
       summary: 'Das ist ein Beispiel 1',
       description:
         'Das ist alles was ich schreiben kann denn ich finde es sehr serh sehr toll hihihi',
-      projectLinkGithub: '//www.github.com',
+      projectLinkGithub: 'https://github.com/JanStrahlmann/Pokedex_Portfolio',
       projectLinkViewSite: '//www.google.com',
       tags: [Tag.HTML, Tag.CSS, Tag.JAVASCRIPT, Tag.API],
       pictures: ['Image1.png', 'Image2.png', 'Image3.png'],
@@ -43,12 +43,12 @@ export class ProjectsService {
     },
     {
       id: 3,
-      name: 'Wetter App',
-      summary: 'Das ist ein Beispiel 4',
+      name: 'Spielwiese',
+      summary: 'Hier sind noch ein paar kleine Projekte',
       description:
         'Das ist alles was ich schreiben kann denn ich finde es sehr serh sehr toll hihihi',
-      projectLinkGithub: '//www.github.com',
-      projectLinkViewSite: '//www.google.com',
+      projectLinkGithub: 'https://github.com/JanStrahlmann?tab=repositories',
+      projectLinkViewSite: '',
       tags: [Tag.HTML, Tag.CSS, Tag.JAVASCRIPT, Tag.API],
       pictures: ['Image3.png', 'Image2.png', 'Image3.png'],
     },
