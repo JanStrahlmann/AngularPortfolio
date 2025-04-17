@@ -1,31 +1,24 @@
-<div class="container">
-    <div class="row">
-        <div class="col-lg shadow border m-1">
-            <div class="text-center">
-                <h2>Über mich</h2>
-                <img src="769e3136185893.57128879735aa.gif" alt="profilpicture" width="256" height="256"
-                    class="rounded-circle">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorem veritatis, animi harum
-                    repellendus dolor! At veritatis modi,
-                    impedit, mollitia nam dolor maiores labore adipisci praesentium sint expedita dolore suscipit.
-                </p>
-            </div>
+<div class="container d-flex justify-content-center mt-4">
+    <div class="w-100" style="max-width: 550px;">
+      <div class="shadow border rounded-5 p-4">
+        <div class="text-center">
+          <h2 class="mb-3">Über mich</h2>
+          <img
+            src="769e3136185893.57128879735aa.gif"
+            alt="profilpicture"
+            width="256"
+            height="256"
+            class="rounded-circle mb-3"
+            style="max-width: 100%;"
+          />
+          <p class="mx-auto" style="max-width: 100%;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+            dolorem veritatis, animi harum repellendus dolor! At veritatis modi,
+            impedit, mollitia nam dolor maiores labore adipisci praesentium sint
+            expedita dolore suscipit.
+          </p>
         </div>
-
-        <div class="col-lg shadow border m-1">
-            <div class="text-center">
-                <h2>Vorgestelltes Projekt</h2>
-                <h4>{{featuredProject.name}}</h4>
-            </div>
-
-            <carousel>
-                <div *ngFor="let picture of featuredProject.pictures">
-                    <slide><img src={{picture}} style="display: block; width: 100%;"></slide>
-                </div>
-            </carousel>
-
-            <p class="mt-2">{{featuredProject.summary}}</p>
-            <p>Besuchen Sie die Portfolio Sektion, um mehr zu Erfahren</p>
-        </div>
+      </div>
     </div>
-</div>
+  </div>
+  
