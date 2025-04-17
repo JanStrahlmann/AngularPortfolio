@@ -1,14 +1,17 @@
 accordion-group::ng-deep .btn-link {
-    color: white;
+  color: white;
 }
 
 accordion-group::ng-deep .card-header {
-    background-color: #6c757d;
+  background-color: #6c757d;
+}
+
+.fs-18 {
+  font-size: 1.125rem; // = 18px
 }
 
 @media (max-width: 380px) {
-    .changeWidthOnMobile {
-        width: 280px !important;
-    }
+  .changeWidthOnMobile {
+    width: 280px !important;
   }
-
+}
