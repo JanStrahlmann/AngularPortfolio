@@ -51,8 +51,7 @@ export class ProjectsService {
         'Erstes Angular-Projekt mit Bootstrap, responsiv umgesetzt und modular aufgebaut.',
       description:
         'Im Rahmen des Angular-Portfolios habe ich erstmals mit Angular gearbeitet und dabei Services, Components, Routing und TypeScript kennengelernt; das Styling wurde mit Bootstrap umgesetzt und das Projekt ist vollständig responsive gestaltet.',
-      projectLinkGithub:
-        'https://github.com/JanStrahlmann/AngularPortfolio',
+      projectLinkGithub: 'https://github.com/JanStrahlmann/AngularPortfolio',
       projectLinkViewSite: '//www.google.com',
       tags: [Tag.TYPESCRIPT, Tag.ANGULAR, Tag.BOOTSTRAP, Tag.SCSS],
       pictures: [
