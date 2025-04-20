@@ -15,7 +15,7 @@ export class ProjectsService {
       description:
         'Beim Pokedex-Projekt wurde eine API genutzt, um Informationen zu den Pokémon wie Attacken, Stats und Moves darzustellen; die Anwendung ist vollständig responsive optimiert.',
       projectLinkGithub: 'https://github.com/JanStrahlmann/PokedexPortfolio',
-      projectLinkViewSite: '//www.google.com',
+      projectLinkViewSite: 'https://pokedexportfolio.netlify.app/',
       tags: [Tag.HTML, Tag.CSS, Tag.JAVASCRIPT, Tag.API],
       pictures: [
         'Pokedex.png',
@@ -32,7 +32,7 @@ export class ProjectsService {
       description:
         'Bei dem Projekt haben wir in einer Gruppe aus 3 Personen das Kanbanboard umgesetzt. Wir haben ein Design bei Figma erhalten und haben die Aufgaben mithilfe eines Trello-Boards aufgeteilt. Wir haben uns die Funktionen ausgedacht und das Design nachgecoded. Meine Aufgabe waren: HTML / CSS für Login, SignUP, Responsive Navbar und die komplette Kontakt-Seite (HTML, CSS, Javascript, Animation, Responsive). Alle Daten werden auch im Local Storage gespeichert.',
       projectLinkGithub: 'https://github.com/JanStrahlmann/JoinPortfolio',
-      projectLinkViewSite: '//www.google.com',
+      projectLinkViewSite: 'https://joinportfolio.netlify.app/login',
       tags: [Tag.HTML, Tag.CSS, Tag.JAVASCRIPT, Tag.LOCALSTORAGE],
       pictures: [
         'JoinLogin.png',
@@ -52,7 +52,7 @@ export class ProjectsService {
       description:
         'Im Rahmen des Angular-Portfolios habe ich erstmals mit Angular gearbeitet und dabei Services, Components, Routing und TypeScript kennengelernt; das Styling wurde mit Bootstrap umgesetzt und das Projekt ist vollständig responsive gestaltet.',
       projectLinkGithub: 'https://github.com/JanStrahlmann/AngularPortfolio',
-      projectLinkViewSite: '//www.google.com',
+      projectLinkViewSite: 'https://portfoliojanstr.netlify.app/home',
       tags: [Tag.TYPESCRIPT, Tag.ANGULAR, Tag.BOOTSTRAP, Tag.SCSS],
       pictures: [
         'PortfolioÜberMich.png',
