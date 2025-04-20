@@ -52,7 +52,7 @@ export class ProjectsService {
       description:
         'Im Rahmen des Angular-Portfolios habe ich erstmals mit Angular gearbeitet und dabei Services, Components, Routing und TypeScript kennengelernt; das Styling wurde mit Bootstrap umgesetzt und das Projekt ist vollständig responsive gestaltet.',
       projectLinkGithub: 'https://github.com/JanStrahlmann/AngularPortfolio',
-      projectLinkViewSite: 'https://portfoliojanstr.netlify.app/home',
+      projectLinkViewSite: 'https://portfoliojanstr.netlify.app/',
       tags: [Tag.TYPESCRIPT, Tag.ANGULAR, Tag.BOOTSTRAP, Tag.SCSS],
       pictures: [
         'PortfolioÜberMich.png',
