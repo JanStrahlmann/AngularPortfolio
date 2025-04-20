@@ -21,8 +21,8 @@ export class ResumeComponent {
   DownloadFile() {
     const link = this.renderer.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', 'Resume.pdf');
-    link.setAttribute('download', 'Resume.pdf');
+    link.setAttribute('href', 'Lebenslauf_Jan_Strahlmann.pdf');
+    link.setAttribute('download', 'Lebenslauf_Jan_Strahlmann.pdf');
     link.click();
     link.remove();
   }
